@@ -19,8 +19,8 @@ public class main {
 // hiển thị sản phẩm
         Set<String> key = new HashSet<String>();
         key = hashMap.keySet();
-        for (String maSP: key) {
-            System.out.println(maSP + " - " + hashMap.get(maSP).name + " - " + hashMap.get(maSP).year + " - " + hashMap.get(maSP).make);
+        for (String ma_sp: key) {
+            System.out.println(ma_sp + " - " + hashMap.get(ma_sp).name + " - " + hashMap.get(ma_sp).year + " - " + hashMap.get(ma_sp).make);
         }
 
 
