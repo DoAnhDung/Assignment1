@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Product {
-    public String ID, name, year, make;
+    public String ID, name, year, make, price;
 
     public void nhap(Scanner input){
         System.out.print("Ma SP: ");
@@ -12,5 +12,7 @@ public class Product {
         this.year = input.nextLine();
         System.out.print("Ten hang: ");
         this.make = input.nextLine();
+        System.out.print("Gia tien: ");
+        this.price = input.nextLine();
     }
 }
