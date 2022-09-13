@@ -5,7 +5,7 @@ public class main {
         int n;
         Scanner input = new Scanner(System.in);
         HashMap<String, Product> hashMap = new HashMap<String, Product>();
-
+// nhập sản phẩm
         do {
             Product phone = new Product();
             System.out.println("Nhap SP");
@@ -16,7 +16,7 @@ public class main {
             input.nextLine();
         } while (n == 1);
 
-
+// hiển thị sản phẩm
         Set<String> key = new HashSet<String>();
         key = hashMap.keySet();
         for (String maSP: key) {
@@ -32,7 +32,7 @@ public class main {
           switchValue= input.nextInt();
 
           switch (switchValue){
-              case 0:
+              case 0:// cập nhật sản phẩm
                   System.out.print("Nhap ma SP: ");
                   String ma_sp = input.nextLine();
                   if(hashMap.containsKey(ma_sp) == false){
@@ -63,7 +63,7 @@ public class main {
                               System.out.println("Error");
                               break;
                       }
-//            Xoa sv
+//            xóa sản phẩm
                       System.out.print("Nhap ma sp muon xoa: ");
                       ma_sp = input.nextLine();
                       if (hashMap.containsKey(ma_sp) == false){
